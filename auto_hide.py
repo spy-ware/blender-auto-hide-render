@@ -1,6 +1,6 @@
 bl_info = {
     "name": "Auto Hide from Render",
-    "author": "Your Name Here",
+    "author": "ChatGPT",
     "version": (1, 2),
     "blender": (2, 93, 0),
     "location": "View3D > Object > Auto Hide from Render",
