@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Auto Hide from Render",
-    "author": "ChatGPT",
-    "version": (1, 1),
+    "author": "Your Name Here",
+    "version": (1, 2),
     "blender": (2, 93, 0),
     "location": "View3D > Object > Auto Hide from Render",
     "description": "Automatically hide objects from render when hidden in viewport.",
@@ -67,7 +67,9 @@ def unregister():
     bpy.utils.unregister_class(HideFromRender)
     bpy.utils.unregister_class(UnhideFromRender)
     bpy.utils.unregister_class(AutoHideFromRenderPreferences)
-    bpy.app.handlers.depsgraph_update_pre.remove(hide_render_callback)
+    
+    if hide_render_callback in bpy.app.handlers.depsgraph_update_pre:
+        bpy.app.handlers.depsgraph_update_pre.remove(hide_render_callback)
 
 
 if __name__ == "__main__":
