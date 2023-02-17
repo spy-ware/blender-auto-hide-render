@@ -1,5 +1,5 @@
 # blender-auto-hide-render
-Written by ChatGPT
+Written by ChatGPT  
 Automatically hides objects from render when they are hidden in the viewport, and vice-versa
 
 ## Installation instructions
